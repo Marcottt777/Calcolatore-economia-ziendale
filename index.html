@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Fomule economia</title>
+    <link href="miocss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="miojs.js"></script>
+</head>
+
+<body>
+    <div id="Header">
+        <img id="Logo" src="images/logo.png">
+
+    </div>    
+    <div id="Nav">
+        <ul id="Menu">
+            <a href="#calcolo1" onclick="menuappare(true,true)"><li>riordino impresa commerciale/industriale</li></a>
+            <a href="#calcolo2" onclick="menuappare(true,false)" style="width:150px"><li>Tasso di rotazione</li></a>
+        </ul>
+    </div>
+    <hr>
+    <div id="calcolo1">
+        <h2>Calcolatore del livello di riordino dell' impresa commerciale/industriale</h2>
+                <div class="form1">
+                    <div class="campo">
+                        materiale utilizzato<br>
+                        <input type="number" id="materiale" class="input" required>
+                    </div><br>
+                    <div class="campo">
+                        giorni di uso/tempo di lavorazione<br>
+                        <input type="number" id="giorni_uso" class="input" required>
+                    </div>
+                    <div class="campo"><br>
+                        giorni di riapprovigionamento<br>
+                        <input type="number" id="giorni_r" class="input" required>
+                    </div ><br>
+                    <div class="campo">
+                        scorta di sicurezza in giorni<br>
+                        <input type="number" id="scorta_s" class="input" required>
+                    </div>
+                    <div id="risultato" class="risultato">Risultato:</div>
+                </div>
+                <div class="button">
+                    <button onclick="calcola(true)">Calcola</button>
+                    <button onclick="calcola(false)">Resetta</button>
+                    <button onclick="menuappare(false, true)">Chiudi</button>
+                </div>
+    </div>
+    <div id="calcolo2">
+        <h2>Calcolatore del tasso di rotazione del singolo pordotto</h2>
+        <div class="form1">
+            <div class="campo">
+                Esistenza * giorni<br>
+                <input type="number" id="e_g" class="input" required>
+            </div><br>
+            <div class="campo">
+                totale giorni del periodo<br>
+                <input type="number" id="tot_giorni" class="input" required>
+            </div>
+            <div class="campo"><br>
+                totale degli scarichi del periodo<br>
+                <input type="number" id="tot_scarichi" class="input" required>
+            </div >
+            <div id="risultato2" class="risultato">Consistenza media:</div>
+            <div id="risultato3" class="risultato">Indice di rotazione:</div>
+            <div id="risultato4" class="risultato">Giacenza media:</div>
+        </div>
+        <div class="button">
+            <button onclick="calcola2(true)">Calcola</button>
+            <button onclick="calcola2(false)">Resetta</button>
+            <button onclick="menuappare(false,false)">Chiudi</button>
+        </div>
+    </div>
+</body>
+
+</html>
