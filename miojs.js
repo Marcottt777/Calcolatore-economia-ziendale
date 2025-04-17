@@ -43,14 +43,20 @@
             if (quale)
             {
                 if (appare)
+                {
                     a.style.display="flex";
+                    b.style.display="none";
+                }    
                  else
                     a.style.display="none";
             }
              else
             {
                 if (appare)
+                    {
                     b.style.display="flex";
+                    a.style.display="none";
+                    }
                  else
                     b.style.display="none";
             }
