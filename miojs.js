@@ -61,14 +61,3 @@ function menuappare(appare, quale){
             b.style.display="none";
     }
 }
-function formappare(appare){
-    let c=document.getElementById("sparisce");
-    let b=document.getElementById("buttonone");
-    if (appare)
-    {
-        c.style.display="flex";
-        b.style.display="none";
-    }   
-     else
-        c.style.display="none";
-}
