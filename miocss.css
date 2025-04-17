@@ -28,7 +28,7 @@ body {
     margin-right:40px; 
     border:thin black solid;
     background-color: black;    
-    height:25px;width:300px;
+    height:25px;width:160px;
     text-align:center;
     padding-top:5px;
     text-decoration: none;
@@ -46,31 +46,29 @@ hr {
     background: linear-gradient(to right, black, yellow, black);
 }
 
-#calcolo1 {
+
+.calcolo {
     margin-top: 100px;
     margin-bottom: 100px;
     scroll-margin-top: 100px;
     padding: 40px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    display: none;
-    flex-direction: column;
     align-items: center;
     background-color: white;
     border-radius: 10px;
+}
+
+#calcolo1 {
+    display: none;
+    flex-direction: column;
+    
     
 }
 
 #calcolo2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    scroll-margin-top: 100px;
-    padding: 40px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     display: none;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
+    
 }
 
 .form1{
@@ -123,4 +121,11 @@ hr {
     font-weight: bold;
     font-size: 18px;
     color: green;
+}
+
+#sparisce{
+    display: none;
+    flex-direction: column;
+    font-size: 2.5vw;
+    text-align: center;
 }
