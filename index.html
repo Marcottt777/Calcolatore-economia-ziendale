@@ -13,11 +13,11 @@
     <div id="Nav">
         <ul id="Menu">
             <a href="#calcolo1" onclick="menuappare(true,true)"><li>Livello di riordino</li></a>
-            <a href="#calcolo2" onclick="menuappare(true,false)" style="width:150px"><li>Tasso di rotazione</li></a>
+            <a href="#calcolo2" onclick="menuappare(true,false)"><li>Tasso di rotazione</li></a>
         </ul>
     </div>
     <hr>
-    <div id="calcolo1">
+    <div id="calcolo1" class="calcolo">
         <h2>Calcolatore del livello di riordino dell' impresa commerciale/industriale</h2>
                 <div class="form1">
                     <div class="campo">
@@ -44,7 +44,7 @@
                     <button onclick="menuappare(false, true)">Chiudi</button>
                 </div>
     </div>
-    <div id="calcolo2">
+    <div id="calcolo2" class="calcolo">
         <h2>Calcolatore del tasso di rotazione del singolo pordotto</h2>
         <div class="form1">
             <div class="campo">
@@ -67,6 +67,16 @@
             <button onclick="calcola2(true)">Calcola</button>
             <button onclick="calcola2(false)">Resetta</button>
             <button onclick="menuappare(false,false)">Chiudi</button>
+        </div>
+    </div>
+    <div class="calcolo" style="background: linear-gradient(to right, black, yellow, black);">
+        <div id="buttonone" class="button"><button onclick="formappare(true)" style="width:150px;">Lasciaci la tua email!!!</button></div>
+        <div id="sparisce" class="calcolo campo" style="width:60%;margin:auto;" >
+            <form action="https://formspree.io/f/xnnpkqbj" method="post">
+                ↓Inserisci l'email qua sotto↓<br>
+                <input type="email" name="email" class="input" placeholder="es:mariolina89@gmail.com" required>
+                <div class="button"><button type="submit">Invia</button></div>
+            </form>
         </div>
     </div>
 </body>
