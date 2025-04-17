@@ -1,0 +1,131 @@
+body {
+    width:90%;
+    margin:auto;
+
+}
+
+
+#Header {
+	text-align: center;
+}
+
+#Logo {
+    width:20%;
+}
+
+#Nav {
+	height:50px;
+    width:100%
+}
+
+#Menu {
+    list-style: none;
+    margin-left:-40px;
+}
+
+#Menu a {
+	float:left;
+    margin-right:40px; 
+    border:thin black solid;
+    background-color: black;    
+    height:25px;width:160px;
+    text-align:center;
+    padding-top:5px;
+    text-decoration: none;
+    color:white;
+    transition: transform 0.3s ease;
+}
+
+#Menu a:hover {
+    color:gold;
+    transform: scale(1.1);
+}
+
+hr {
+    height: 5px;
+    background: linear-gradient(to right, black, yellow, black);
+}
+
+
+.calcolo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
+    padding: 40px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#calcolo1 {
+    display: none;
+    flex-direction: column;
+    
+    
+}
+
+#calcolo2 {
+    display: none;
+    flex-direction: column;
+    
+}
+
+.form1{
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.campo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    width:100%;
+    text-align:center;
+    margin-top:20px
+
+}
+
+.button button { 
+    margin: 10px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+    
+}
+
+.button button:hover {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+
+.risultato {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+}
+
+#sparisce{
+    display: none;
+    flex-direction: column;
+    font-size: 2.5vw;
+    text-align: center;
+}
